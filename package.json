@@ -1,0 +1,30 @@
+{
+  "name": "bubbles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregorytomilin/bubbles.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gregorytomilin/bubbles/issues"
+  },
+  "homepage": "https://github.com/gregorytomilin/bubbles#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svg-sprite": "^1.5.0",
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "gulp-svgmin": "^3.0.0"
+  }
+}
