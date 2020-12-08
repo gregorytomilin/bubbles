@@ -7,6 +7,8 @@ const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 
 
+
+
 task('icons', () => {
     return src('./img/icons/svg/*.svg')
         // minify svg
@@ -41,3 +43,7 @@ task('sass', () => {
         .pipe(sourcemaps.init())
         .pipe(dest('./css'));      // выгружаем результат
 });
+
+task('watch', ()=>{
+    return watch(['css/scss/*.scss'], series('sass'));
+})
