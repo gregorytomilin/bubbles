@@ -36,7 +36,7 @@ task('icons', () => {
 task('sass', () => {
     return src('css/scss/**/*.scss') // берём все sass-файлы
         .pipe(sass({
-            outputStyle: 'compressed',  // вложенный (по умлчанию)
+            outputStyle: 'compressed',  // вложенный (по умoлчанию)
         }).on('error', sass.logError))
         .pipe(sourcemaps.init())
         .pipe(dest('./css'));      // выгружаем результат
