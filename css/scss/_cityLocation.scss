@@ -1,0 +1,15 @@
+.cityLocation{
+    display: flex;
+    align-items: center;
+}
+
+.cityLocation svg{
+    fill: rgb(250, 70, 100);
+    width: 25px;
+    height: 30px;
+    margin-right: 5px;
+}
+.cityLocation span{
+    font-style: 18px;
+    font-weight: 700;
+}

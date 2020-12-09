@@ -1,20 +1,23 @@
 @import 'normalize';
 @import 'menu';
+@import 'social';
+@import 'contacts';
+@import 'cityLocation';
+@import 'features';
 
+body{
+  font-family: sans-serif;
+
+}
 .block{
-  width: 100px;
-  &__main{
-    width: 50px;
-  }
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
 }
-.clock{
-  width: 100px;
-  height: 100px;
-  min-width: 100px;
-  color: aqua;
+.header__top{
+  display: flex;
+  justify-content: space-between;
 }
-.icon{
-  fill: red;
-  height: 15px;
-  width: 15px;
+.header__top{
+
 }
