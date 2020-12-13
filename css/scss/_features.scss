@@ -8,9 +8,12 @@
         font-weight: bold;
         color: $colorDark;
         text-transform: uppercase;
+        flex-shrink: 0;
+        white-space: nowrap;
         & svg{
             width: 30px;
             height: 40px;
+            flex-shrink: 0;
             margin-right: 10px;
             fill: $colorDark;
         }

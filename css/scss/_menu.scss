@@ -9,12 +9,13 @@
         text-decoration: none;
         border-right: 2px solid $colorLighter;
         transition: all ease .2s;
-        :last-of-type{
+        &:last-child{
         border-right: none;
         }
         &:hover{
-            background: $color;
+            background: $colorLighter;
             color: white;
+            transform: scale(1.1);
         }
     }
 }

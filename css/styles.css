@@ -104,13 +104,14 @@ html {
   transition: all ease .2s;
 }
 
-.menu__item :last-of-type {
+.menu__item:last-child {
   border-right: none;
 }
 
 .menu__item:hover {
-  background: #8e2d7d;
+  background: #bb1d9f;
   color: white;
+  transform: scale(1.1);
 }
 
 .social {
@@ -169,11 +170,14 @@ html {
   font-weight: bold;
   color: #652359;
   text-transform: uppercase;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .features__item svg {
   width: 30px;
   height: 40px;
+  flex-shrink: 0;
   margin-right: 10px;
   fill: #652359;
 }
@@ -215,6 +219,7 @@ html {
   text-align: center;
   margin-bottom: 10px;
   z-index: 3;
+  box-shadow: 2px 2px 5px #444444bb;
 }
 
 .extraService__mickey {
@@ -271,7 +276,7 @@ html {
   position: absolute;
   z-index: 1;
   bottom: 0;
-  right: -100px;
+  right: -35px;
 }
 
 .decor__baloons1 img {
