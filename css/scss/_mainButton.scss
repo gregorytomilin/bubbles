@@ -1,0 +1,16 @@
+.mainButton{
+    display: flex;
+    width:fit-content;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background: $colorLighter;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover{
+    background: $color;
+
+    }
+}
