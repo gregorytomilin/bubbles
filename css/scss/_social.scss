@@ -1,7 +1,12 @@
 .social{
     display: flex;
-    &__item object{
-        width: 25px;
-        height: 25px;
+    &__item {
+        margin-right: 5px;
+        object{
+            width: 30px;
+            height: 30px;
+        }
+
     }
+
 }

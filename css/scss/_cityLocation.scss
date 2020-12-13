@@ -4,12 +4,13 @@
 }
 
 .cityLocation svg{
-    fill: rgb(250, 70, 100);
+    fill: $colorLight;
     width: 25px;
     height: 30px;
     margin-right: 5px;
 }
 .cityLocation span{
-    font-style: 18px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: bold;
+    color: $colorLight;
 }

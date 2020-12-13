@@ -1,12 +1,18 @@
 .features{
+    align-self: self-start;
+    padding-top: 50px;
     &__item{
         display: flex;
         align-items: center;
-        font-size: 25px;
+        font-size: 27px;
+        font-weight: bold;
+        color: $colorDark;
         text-transform: uppercase;
         & svg{
             width: 30px;
             height: 40px;
+            margin-right: 10px;
+            fill: $colorDark;
         }
     }
 }

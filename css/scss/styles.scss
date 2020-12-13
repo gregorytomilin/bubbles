@@ -1,9 +1,39 @@
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+  font-family: "bebas"; 
+  // адрес шрифта и тип 
+  src: url("../css/fonts/bebasRegular.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+  font-family: "bebas"; 
+  // адрес шрифта и тип 
+  src: url("../css/fonts/bebasBold.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+*{
+  font-family: "bebas";
+}
+
+$color: #8e2d7d;
+$colorLight: #7e4674;
+$colorLighter: #bb1d9f;
+$colorDark: #652359;
+
 @import 'normalize';
+@import 'header';
 @import 'menu';
 @import 'social';
 @import 'contacts';
 @import 'cityLocation';
 @import 'features';
+@import 'mainButton';
+@import 'extraService';
+@import 'firstBlock';
+
 
 body{
   font-family: sans-serif;
@@ -13,11 +43,15 @@ body{
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;
+  padding: 10px;
 }
-.header__top{
-  display: flex;
-  justify-content: space-between;
-}
-.header__top{
 
+
+.secondHeader{
+  display: inline-flex;
+  padding: 10px 20px;
+  color: $color;
+  background-color: white;
+  margin: 0 auto;
+  justify-self: center;
 }
