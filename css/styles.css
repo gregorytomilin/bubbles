@@ -214,7 +214,7 @@ html {
   padding: 5px 10px;
   background: white;
   color: #bb1d9f;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 10px;
@@ -228,7 +228,7 @@ html {
 
 .extraService__mickey object {
   width: 200px;
-  margin: 0 0 -20px auto;
+  margin: 0 0 -15px auto;
   z-index: 2;
 }
 
@@ -284,6 +284,53 @@ html {
   transform: rotate(-30deg);
 }
 
+.priceWrapper {
+  background-color: #fccfd7;
+}
+
+.priceWrapper {
+  position: relative;
+  padding-top: 30px;
+  overflow-x: hidden;
+}
+
+.priceWrapper__decorShapes {
+  position: absolute;
+  top: -30px;
+  width: 100%;
+}
+
+.priceWrapper__decorShapes object {
+  width: 110%;
+}
+
+.priceBlock {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.priceList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.priceItem {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  width: 23%;
+}
+
+.priceItem__name {
+  padding: 10px 20px;
+}
+
+.priceItem__cost {
+  padding: 10px 20px;
+}
+
 body {
   font-family: sans-serif;
 }
@@ -297,9 +344,12 @@ body {
 
 .secondHeader {
   display: inline-flex;
-  padding: 10px 20px;
-  color: #8e2d7d;
+  padding: 10px 30px;
+  font-size: 35px;
+  color: #7e4674;
+  font-weight: bold;
   background-color: white;
   margin: 0 auto;
   justify-self: center;
+  margin-bottom: 20px;
 }

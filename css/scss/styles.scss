@@ -33,7 +33,7 @@ $colorDark: #652359;
 @import 'mainButton';
 @import 'extraService';
 @import 'blockFirst';
-@import 'blockPrice';
+@import 'blockPrices';
 
 
 body{
@@ -50,9 +50,12 @@ body{
 
 .secondHeader{
   display: inline-flex;
-  padding: 10px 20px;
-  color: $color;
+  padding: 10px 30px;
+  font-size: 35px;
+  color: $colorLight;
+  font-weight: bold;
   background-color: white;
   margin: 0 auto;
   justify-self: center;
+  margin-bottom: 20px;
 }

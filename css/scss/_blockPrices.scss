@@ -1,11 +1,37 @@
+
+.priceWrapper{
+    background-color: rgb(252, 207, 215);
+
+}
+.priceWrapper{
+    position: relative;
+    padding-top: 30px;
+    overflow-x: hidden;
+    &__decorShapes{
+        position: absolute;
+        top: -30px;
+        width: 100%;
+        object{
+            width: 110%;
+        }
+    }
+}
+.priceBlock{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
 .priceList{
     display: flex;
-    background-color: rgb(252, 207, 215);
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .priceItem{
     display: flex;
     flex-direction: column;
     border-radius: 5px;
+    width: 23%;
     &__name{
         padding: 10px 20px;
     }
