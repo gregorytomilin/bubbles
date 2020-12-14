@@ -1,0 +1,17 @@
+.priceList{
+    display: flex;
+    background-color: rgb(252, 207, 215);
+}
+.priceItem{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    &__name{
+        padding: 10px 20px;
+    }
+    &__cost{
+        padding: 10px 20px;
+    }
+
+
+}

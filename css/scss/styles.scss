@@ -1,18 +1,18 @@
 @font-face {
-  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
-  font-family: "bebas"; 
-  // адрес шрифта и тип 
-  src: url("../css/fonts/bebasRegular.ttf") format("truetype"); 
-  font-style: normal; 
-  font-weight: normal; 
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "bebas";
+  // адрес шрифта и тип
+  src: url("../css/fonts/bebasRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }
 @font-face {
-  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
-  font-family: "bebas"; 
-  // адрес шрифта и тип 
-  src: url("../css/fonts/bebasBold.ttf") format("truetype"); 
-  font-style: normal; 
-  font-weight: normal; 
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "bebas";
+  // адрес шрифта и тип
+  src: url("../css/fonts/bebasBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }
 *{
   font-family: "bebas";
@@ -32,7 +32,8 @@ $colorDark: #652359;
 @import 'features';
 @import 'mainButton';
 @import 'extraService';
-@import 'firstBlock';
+@import 'blockFirst';
+@import 'blockPrice';
 
 
 body{
