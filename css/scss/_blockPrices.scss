@@ -1,14 +1,17 @@
 
 .priceWrapper{
-    background-color: rgb(252, 207, 215);
 
+    background-color: rgb(252, 207, 215);
+    background: url('../img/fons/fon-main.jpg') repeat-y;
+    background-size: cover;
 }
 .priceWrapper{
     position: relative;
     padding-top: 30px;
-    overflow-x: hidden;
+    
     &__decorShapes{
         position: absolute;
+        overflow: hidden;
         top: -30px;
         width: 100%;
         object{
@@ -18,8 +21,15 @@
 }
 .priceBlock{
     display: flex;
+    max-width: 900px;
+    width: 100%;
     flex-direction: column;
     position: relative;
+    padding-bottom: 20px;
+
+    .mainButton{
+        margin: 0 auto;
+    }
 
 }
 .priceList{
@@ -30,13 +40,51 @@
 .priceItem{
     display: flex;
     flex-direction: column;
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: white;
     border-radius: 5px;
-    width: 23%;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.212);
+    cursor: pointer;
+    position: relative;
+
+    &:hover{
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.4);
+        .priceItem__name{
+            background: $color;
+        }
+        .priceItem__photo{
+            transform: scale(1.04);
+
+        }
+  
+    }
+
+
+
     &__name{
         padding: 10px 20px;
+        background: $colorPink;
+        color: white;
+        font-size: 20px;
+        z-index: 1;
+
     }
     &__cost{
+        display: flex;
+        justify-content: flex-end;
+        color:$color;
+        font-size: 18px;
         padding: 10px 20px;
+        transition: transform ease .2s;
+    }
+    &__photo{
+        height: 200px;
+        object-fit: cover;
+        z-index: 0;
+        transition: transform ease .2s;
     }
 
 

@@ -17,6 +17,17 @@
   font-family: "bebas";
 }
 
+body {
+  font-family: sans-serif;
+}
+
+.block {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -286,16 +297,18 @@ html {
 
 .priceWrapper {
   background-color: #fccfd7;
+  background: url("../img/fons/fon-main.jpg") repeat-y;
+  background-size: cover;
 }
 
 .priceWrapper {
   position: relative;
   padding-top: 30px;
-  overflow-x: hidden;
 }
 
 .priceWrapper__decorShapes {
   position: absolute;
+  overflow: hidden;
   top: -30px;
   width: 100%;
 }
@@ -306,8 +319,15 @@ html {
 
 .priceBlock {
   display: flex;
+  max-width: 900px;
+  width: 100%;
   flex-direction: column;
   position: relative;
+  padding-bottom: 20px;
+}
+
+.priceBlock .mainButton {
+  margin: 0 auto;
 }
 
 .priceList {
@@ -319,27 +339,51 @@ html {
 .priceItem {
   display: flex;
   flex-direction: column;
+  width: 200px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: white;
   border-radius: 5px;
-  width: 23%;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.212);
+  cursor: pointer;
+  position: relative;
+}
+
+.priceItem:hover {
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.4);
+}
+
+.priceItem:hover .priceItem__name {
+  background: #8e2d7d;
+}
+
+.priceItem:hover .priceItem__photo {
+  transform: scale(1.04);
 }
 
 .priceItem__name {
   padding: 10px 20px;
+  background: #e18dd2;
+  color: white;
+  font-size: 20px;
+  z-index: 1;
 }
 
 .priceItem__cost {
+  display: flex;
+  justify-content: flex-end;
+  color: #8e2d7d;
+  font-size: 18px;
   padding: 10px 20px;
+  transition: transform ease .2s;
 }
 
-body {
-  font-family: sans-serif;
-}
-
-.block {
-  max-width: 1100px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 10px;
+.priceItem__photo {
+  height: 200px;
+  object-fit: cover;
+  z-index: 0;
+  transition: transform ease .2s;
 }
 
 .secondHeader {

@@ -18,7 +18,19 @@
   font-family: "bebas";
 }
 
+body{
+  font-family: sans-serif;
+
+}
+.block{
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
 $color: #8e2d7d;
+$colorPink: #e18dd2;
 $colorLight: #7e4674;
 $colorLighter: #bb1d9f;
 $colorDark: #652359;
@@ -36,16 +48,6 @@ $colorDark: #652359;
 @import 'blockPrices';
 
 
-body{
-  font-family: sans-serif;
-
-}
-.block{
-  max-width: 1100px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 10px;
-}
 
 
 .secondHeader{
