@@ -1,0 +1,92 @@
+.setsWrapper{
+    background-color: rgb(252, 207, 215);
+    z-index: 3;
+    padding-top: 80px;
+    position: relative;
+
+    background: url('../img/fons/fon2.jpg') repeat-y;
+    background-size: cover;
+    position: relative;
+    &__decorShapes{
+        position: absolute;
+        overflow: hidden;
+        top: -70px;
+        width: 100%;
+        object{
+            width: 110%;
+            filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.404));
+        }
+    }
+}
+.setsBlock{
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    width: 100%;
+    .mainButton {
+        margin: 0 auto 20px;
+    }
+
+}
+.setsList{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+
+.setItem{
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    width: 200px;
+    background-color: blueviolet;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    &__photo{
+        overflow: hidden;
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        transition: transform ease .2s;
+    }
+    &__name{
+        padding: 5px 10px;
+        background: white;
+        font-size: 18px;
+        color: $color;
+    }
+    &__desc{
+        background: $color;
+        color: white;
+        padding: 5px 10px;
+    }
+    &__cost{
+        display: flex;
+        justify-content: flex-end;
+        padding: 5px 10px;
+        background: white;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: $colorLight;
+    }
+    &:hover{
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.4);
+        .setItem__photo{
+            transform: scale(1.04);
+        }
+    }
+}
+
+.fonItem3{
+    position: absolute;
+    z-index: 0;
+    left: -30px;
+    top: 30px;
+    transform: rotate(20deg);
+}

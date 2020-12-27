@@ -8,6 +8,7 @@
 .priceWrapper{
     position: relative;
     padding-top: 30px;
+    z-index: 2;
     
     &__decorShapes{
         position: absolute;
@@ -16,6 +17,7 @@
         width: 100%;
         object{
             width: 110%;
+            filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.404));
         }
     }
 }
@@ -26,9 +28,10 @@
     flex-direction: column;
     position: relative;
     padding-bottom: 20px;
+    z-index: 3;
 
     .mainButton{
-        margin: 0 auto;
+        margin: 10px auto 40px;
     }
 
 }
@@ -89,3 +92,32 @@
 
 
 }
+
+.priceBlock-shapes{
+    position: absolute;
+    z-index: 1;
+    bottom: 50%;
+    transform: translate(0, 50%);
+    width: 100%;
+    overflow: hidden;
+    object:first-of-type{
+      position: absolute;
+      width: 110%;
+    }
+    object{
+      width: 110%;
+    }
+  }
+
+  .fonItem2{
+      position: absolute;
+      left: -100px;
+      top: -150px;
+      transform: rotate(20deg)
+  }
+  .fonItem2-1{
+      position: absolute;
+      right: -30px;
+      bottom: 20px;
+      transform: rotate(-20deg)
+  }

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="325.906" viewBox="0 0 1200 325.906">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+        opacity: 0.37;
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="597.97" y1="1226.75" x2="597.97" y2="900.844" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e789d9"/>
+      <stop offset="0.305" stop-color="#fc37ec"/>
+      <stop offset="0.589" stop-color="#d884c5"/>
+      <stop offset="0.825" stop-color="#ec84d5"/>
+      <stop offset="0.986" stop-color="#e18bc8"/>
+      <stop offset="1" stop-color="#e18bc8"/>
+    </linearGradient>
+  </defs>
+  <path id="Shape_3_copy" data-name="Shape 3 copy" class="cls-1" d="M-21,900.851s383.33,116.309,619.486,95.758,409.664-80.178,613.324-77.773c0,50.177,5.14,173.044,5.14,173.044S863.54,1283.39,474.178,1210s-154.7-29.86-491.069-120.14C-15.387,1010.56-21,900.851-21,900.851Z" transform="translate(0 -900.844)"/>
+</svg>
