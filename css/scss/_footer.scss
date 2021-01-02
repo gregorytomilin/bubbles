@@ -1,0 +1,12 @@
+footer{
+    background: $color;
+    color: white;
+}
+.footerblock{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    .phone{
+        color: white;
+    }
+}

@@ -1,0 +1,63 @@
+.guidelineWrapper{
+    background-color: rgb(252, 207, 215);
+    position: relative;
+    padding: 40px 0;
+
+    background: url('../img/fons/fon2.jpg') repeat-y;
+    background-size: cover;
+}
+.guidelineBlock{
+    display: flex;
+    flex-direction: column;
+}
+
+.guidelineList{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 20px;
+    background: #ffffff;
+}
+.guideline{
+    &__item{
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        color: #d6304b;
+        list-style: none;
+        margin-bottom: 5px;
+    }
+    &__text{
+        font-stretch:expanded;
+    }
+    &__index{
+        width: 25px;
+        height: 25px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        font-size: 20px;
+        background-color: $color;
+        border-radius: 50%;
+        overflow: hidden;
+        color: white;
+    }
+}
+.bgc--green{
+    background-color: green;
+}
+.bgc--yellow{
+    background-color: #d2e81c;
+}
+.bgc--blue{
+    background-color: blue;
+}
+.bgc--red{
+    background-color: red;
+}
+.bgc--purple{
+    background-color: purple;
+}

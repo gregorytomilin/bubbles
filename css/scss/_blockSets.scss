@@ -1,6 +1,6 @@
 .setsWrapper{
     background-color: rgb(252, 207, 215);
-    z-index: 3;
+    z-index: 4;
     padding-top: 80px;
     position: relative;
 
@@ -12,6 +12,18 @@
         overflow: hidden;
         top: -70px;
         width: 100%;
+
+        &--bottom{
+            position: absolute;
+            bottom: -160px;
+            z-index: 1;
+            width: 100%;
+            overflow: hidden;
+            object{
+                width: 110%;
+
+            }
+        }
         object{
             width: 110%;
             filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.404));
@@ -23,6 +35,7 @@
     flex-direction: column;
     max-width: 900px;
     width: 100%;
+    z-index: 2;
     .mainButton {
         margin: 0 auto 20px;
     }
@@ -54,12 +67,14 @@
         width: 200px;
         object-fit: cover;
         transition: transform ease .2s;
+        z-index: 0;
     }
     &__name{
         padding: 5px 10px;
         background: white;
         font-size: 18px;
         color: $color;
+        z-index: 1;
     }
     &__desc{
         background: $color;

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1203" height="163" viewBox="0 0 1203 163">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        opacity: 0.72;
+        fill: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="126.023" x2="1203" y2="62.977" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7e4674"/>
+      <stop offset="1" stop-color="#bf88b5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="111.526" x2="1203.09" y2="48.474" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e251c8"/>
+      <stop offset="1" stop-color="#bf88b5"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-1" d="M0,54S535.867,98.639,653,85c124.733-14.525,483.29-57.892,550-59-1.3,31.67,0,119,0,119s-367.317-39.924-797-13C129.189,149.344,0,163,0,163V54Z"/>
+  <path id="Shape_8_copy" data-name="Shape 8 copy" class="cls-2" d="M0,6S492.2,88.316,610,83c130.139-5.873,567.34-79.789,593-82,0.18,31.67,0,120,0,120S834.683,80.076,405,107C128.189,124.345,0,159,0,159V6Z"/>
+</svg>

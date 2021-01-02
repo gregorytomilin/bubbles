@@ -194,6 +194,7 @@ html {
 }
 
 .mainButton {
+  z-index: 20;
   display: flex;
   width: fit-content;
   font-size: 25px;
@@ -431,7 +432,7 @@ html {
 
 .setsWrapper {
   background-color: #fccfd7;
-  z-index: 3;
+  z-index: 4;
   padding-top: 80px;
   position: relative;
   background: url("../img/fons/fon2.jpg") repeat-y;
@@ -446,6 +447,18 @@ html {
   width: 100%;
 }
 
+.setsWrapper__decorShapes--bottom {
+  position: absolute;
+  bottom: -160px;
+  z-index: 1;
+  width: 100%;
+  overflow: hidden;
+}
+
+.setsWrapper__decorShapes--bottom object {
+  width: 110%;
+}
+
 .setsWrapper__decorShapes object {
   width: 110%;
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.404));
@@ -456,6 +469,7 @@ html {
   flex-direction: column;
   max-width: 900px;
   width: 100%;
+  z-index: 2;
 }
 
 .setsBlock .mainButton {
@@ -489,6 +503,7 @@ html {
   width: 200px;
   object-fit: cover;
   transition: transform ease .2s;
+  z-index: 0;
 }
 
 .setItem__name {
@@ -496,6 +511,7 @@ html {
   background: white;
   font-size: 18px;
   color: #8e2d7d;
+  z-index: 1;
 }
 
 .setItem__desc {
@@ -532,7 +548,7 @@ html {
 
 .setsWrapper {
   background-color: #fccfd7;
-  z-index: 3;
+  z-index: 4;
   padding-top: 80px;
   position: relative;
   background: url("../img/fons/fon2.jpg") repeat-y;
@@ -547,6 +563,18 @@ html {
   width: 100%;
 }
 
+.setsWrapper__decorShapes--bottom {
+  position: absolute;
+  bottom: -160px;
+  z-index: 1;
+  width: 100%;
+  overflow: hidden;
+}
+
+.setsWrapper__decorShapes--bottom object {
+  width: 110%;
+}
+
 .setsWrapper__decorShapes object {
   width: 110%;
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.404));
@@ -557,6 +585,7 @@ html {
   flex-direction: column;
   max-width: 900px;
   width: 100%;
+  z-index: 2;
 }
 
 .setsBlock .mainButton {
@@ -590,6 +619,7 @@ html {
   width: 200px;
   object-fit: cover;
   transition: transform ease .2s;
+  z-index: 0;
 }
 
 .setItem__name {
@@ -597,6 +627,7 @@ html {
   background: white;
   font-size: 18px;
   color: #8e2d7d;
+  z-index: 1;
 }
 
 .setItem__desc {
@@ -642,9 +673,12 @@ html {
 }
 
 .mickeyBlock {
-  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 10px;
 }
 
 .mickeyList {
@@ -657,7 +691,8 @@ html {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 30px;
+  color: #7e4674;
 }
 
 .mickeyList li svg {
@@ -666,6 +701,245 @@ html {
   fill: #8e2d7d;
   flex-shrink: 0;
   margin-right: 10px;
+}
+
+.mickeyPhoto {
+  z-index: 2;
+}
+
+.mickey__decorShapes {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: -90px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.mickey__decorShapes object {
+  width: 105%;
+  margin: 0 auto;
+}
+
+.mickey__decorShapes object svg {
+  height: 10%;
+}
+
+.mickey__baloonWrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.mickey__baloon {
+  position: absolute;
+  bottom: 0;
+  right: -50px;
+  width: 300px;
+}
+
+.feedbackWrapper {
+  background-color: #fccfd7;
+  z-index: 3;
+  padding-top: 80px;
+  position: relative;
+  height: 100vh;
+  background: url("../img/fons/fon3.jpg") repeat-y;
+  background-size: cover;
+  z-index: 2;
+}
+
+.feedbackBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+}
+
+.feedbackSlider {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2);
+}
+
+.feedbackSlider__arrow {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.feedbackSlider__arrow svg {
+  fill: #8e2d7d;
+  width: 20px;
+}
+
+.feedbackSlider__arrow--right {
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.feedbackSlider__arrow:hover {
+  background-color: rgba(0, 0, 0, 0.068);
+}
+
+.feedbackSlider__arrow:hover svg {
+  fill: #bb1d9f;
+}
+
+.feedbackSlider__arrow:hover .feedbackSlider__arrow--right {
+  transform: scale(1.1);
+}
+
+.feedbackSlider__arrow:focus {
+  background-color: rgba(255, 6, 6, 0.2);
+}
+
+.feedbackList {
+  display: flex;
+  margin: 0 auto;
+  user-select: none;
+}
+
+.feedbackItem {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.feedbackItem__photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.feedbackItem__photo img {
+  width: 100%;
+}
+
+.feedbackItem__sourceIcon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.feedbackItem__sourceIcon:hover {
+  transform: scale(1.1);
+}
+
+.feedbackItem__name {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.feedbackItem__text {
+  padding: 0 40px 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.guidelineWrapper {
+  background-color: #fccfd7;
+  position: relative;
+  padding: 40px 0;
+  background: url("../img/fons/fon2.jpg") repeat-y;
+  background-size: cover;
+}
+
+.guidelineBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.guidelineList {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 20px;
+  background: #ffffff;
+}
+
+.guideline__item {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  color: #d6304b;
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.guideline__text {
+  font-stretch: expanded;
+}
+
+.guideline__index {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-size: 20px;
+  background-color: #8e2d7d;
+  border-radius: 50%;
+  overflow: hidden;
+  color: white;
+}
+
+.bgc--green {
+  background-color: green;
+}
+
+.bgc--yellow {
+  background-color: #d2e81c;
+}
+
+.bgc--blue {
+  background-color: blue;
+}
+
+.bgc--red {
+  background-color: red;
+}
+
+.bgc--purple {
+  background-color: purple;
+}
+
+footer {
+  background: #8e2d7d;
+  color: white;
+}
+
+.footerblock {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.footerblock .phone {
+  color: white;
 }
 
 .secondHeader {
