@@ -56,7 +56,7 @@ window.addEventListener('resize', ()=>{
 //     });
 // });
 
-$('.scrollto a').on('click', function() {
+$('a[href^="#"').on('click', function() {
 
     let href = $(this).attr('href');
 
