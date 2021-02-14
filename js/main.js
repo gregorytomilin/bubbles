@@ -1,23 +1,87 @@
 let hamburg = document.querySelector('.hamburger');
 let menuMobile = document.querySelector('.menu');
+let menuMobileItems = document.querySelectorAll('.menu a');
 
 hamburg.addEventListener('click', ()=>{
     menuMobile.style.transform = 'translate(0, 0)'
 })
 
 menuMobile.addEventListener('click', ()=>{
-      
-    menuMobile.style.transform = 'translate(-100%, 0)'
+      if (window.innerWidth < 680){
+            menuMobile.style.transform = 'translate(-100%, 0)'
+      }
+})
+menuMobileItems.forEach(item => {
+    item.addEventListener('click', ()=>{
+        if (window.innerWidth < 680){
+              menuMobile.style.transform = 'translate(-100%, 0)'
+        }
+  })
+
+
 })
 
 window.addEventListener('resize', ()=>{
-    console.log(document.documentElement.clientWidth);
-    // if(document.documentElement.clientWidth > 680){
-    //     menuMobile.style.transform = 'translate(0, 0)'
-    // } else {
-    //     menuMobile.style.transform = 'translate(-100%, 0)'
-    // }
+    if (window.innerWidth > 680){
+        menuMobile.style.transform = 'translate(0, 0)'
+    } else {
+        menuMobile.style.transform = 'translate(-100%, 0)'
+
+    }
+
 })
+
+// document.querySelectorAll('a[href^="#"').forEach(link => {
+
+//     link.addEventListener('click', function(e) {
+//         e.preventDefault();
+
+//         let href = this.getAttribute('href').substring(1);
+
+//         const scrollTarget = document.getElementById(href);
+
+//         const topOffset = document.querySelector('.scrollto').offsetHeight;
+//         // const topOffset = 0; // если не нужен отступ сверху 
+//         const elementPosition = scrollTarget.getBoundingClientRect().top;
+//         const offsetPosition = elementPosition - topOffset;
+
+//         console.log(scrollTarget);
+//         console.log(elementPosition);
+//         console.log(offsetPosition);
+
+//         window.scrollBy({
+//             top: offsetPosition,
+//             behavior: 'smooth'
+//         });
+//     });
+// });
+
+$('.scrollto a').on('click', function() {
+
+    let href = $(this).attr('href');
+
+    $('html, body').animate({
+        scrollTop: $(href).offset().top
+    }, {
+        duration: 300,   // по умолчанию «400» 
+        easing: "linear" // по умолчанию «swing» 
+    });
+
+    return false;
+});
+
+// const smoothLinks = document.querySelectorAll('a[href^="#"]');
+// for (let smoothLink of smoothLinks) {
+//     smoothLink.addEventListener('click', function (e) {
+//         e.preventDefault();
+//         const id = smoothLink.getAttribute('href');
+
+//         document.querySelector(id).scrollIntoView({
+//             behavior: 'smooth',
+//             block: 'start'
+//         });
+//     });
+// };
 let setItemPhoto = document.querySelectorAll('.setItem__photo');
 let setItem = document.querySelectorAll('.setItem');
 
@@ -28,7 +92,7 @@ function setHeight() {
 }
 setHeight()
 window.addEventListener('resize', ()=>{
-    setHeight()
+    setHeight();
 })
 
 

@@ -10,6 +10,9 @@
     
 
     <title>Bubbles | Воздушные шары Керчь</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
 </head>
 
 <body>
@@ -39,46 +42,43 @@
                     <div class="contacts">
                         <a href="tel:+79781330515" class="phone">+7 (978) 133-05-15</a>
                         <div class="social">
-                                <a href="https://vk.com/bubble.kerch" class="social__item">
-                                    <object type="image/svg+xml" data="img/icons/colored/smm_vk.svg">
-                                    </object>
+                                <a target="_blank" href="https://vk.com/bubble.kerch" class="social__item">
+                                    <img src="img/icons/colored/smm_vk.svg" alt="">
                                 </a>
                             <div class="social__item">
-                                <a href="whatsapp.com">
-                                    <object type="image/svg+xml" data="img/icons/colored/smm_viber.svg"
-                                        >
-                                    </object>
+                                <a target="_blank" href="viber://chat?number=+79781330515">
+                                    <img src="img/icons/colored/smm_viber.svg" alt="">
+
                                 </a>
                             </div>
                             <div class="social__item">
-                                <a href="vk.com">
-                                    <object type="image/svg+xml" data="img/icons/colored/smm_whatsapp.svg"
-                                        >
-                                    </object>
+ 
+                                <a target="_blank" href="https://api.whatsapp.com/send?phone=79781330515">
+                                    <img src="img/icons/colored/smm_whatsapp.svg" alt="">
                                 </a>
                             </div>
                             <div class="social__item">
-                                <a href="vk.com">
-                                    <object type="image/svg+xml" data="img/icons/colored/smm_insta.svg"
-                                        >
-                                    </object>
+
+                                <a target="_blank" target="_blank" href="https://www.instagram.com/bubble_kerch">
+                                    <img src="img/icons/colored/smm_insta.svg" alt="">
+
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <nav class="menu">
-                    <div class="closeMenu">
+                <nav class="menu scrollto">
+                    <div class="closeMenu scrollto">
                         <svg class="">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
                         </svg>
-                        </div>
+                    </div>
                     
-                    <a href="/" class="menu__item">ЦЕНЫ</a>
-                    <a href="/" class="menu__item">НАБОРЫ</a>
-                    <a href="/" class="menu__item">МИККИ-МАУС</a>
-                    <a href="/" class="menu__item">ОТЗЫВЫ</a>
-                    <a href="/" class="menu__item">РЕКОМЕНДАЦИИ</a>
+                    <a href="#prices" class="menu__item ">ЦЕНЫ</a>
+                    <a href="#sets" class="menu__item">НАБОРЫ</a>
+                    <a href="#mickey" class="menu__item">МИККИ-МАУС</a>
+                    <a href="#feedbacks" class="menu__item">ОТЗЫВЫ</a>
+                    <a href="#guideline" class="menu__item">РЕКОМЕНДАЦИИ</a>
                 </nav>
             </div>
         </div>
@@ -147,7 +147,7 @@
 </div>
 
     <!-- Блок цен -->
-    <div class="wrapper priceWrapper">
+    <div class="wrapper priceWrapper" id="prices">
         <div class="priceWrapper__decorShapes">
             <object type="image/svg+xml" data="img/fons/2-shape1.svg"></object>
         </div>
@@ -236,7 +236,7 @@
 
 
     </div>
-    <div class="wrapper setsWrapper">
+    <div class="wrapper setsWrapper" id="sets">
  
         <img src="img/fonItems/balons3.png" alt="" class="fonItem3">
         <div class="setsWrapper__decorShapes--bottom">
@@ -372,7 +372,7 @@
         </div>
 
     </div>
-    <div class="wrapper mickeyWrapper">
+    <div class="wrapper mickeyWrapper" id="mickey">
         <h2 class="secondHeader">Микки Маус</h2>
         <div class="block mickeyBlock">
             <ul class="mickeyList">
@@ -420,7 +420,7 @@
         </div>
     </div>
 
-    <div class="wrapper feedbackWrapper">
+    <div class="wrapper feedbackWrapper" id="feedbacks">
         <div class="block feedbackBlock">
             <h2 class="secondHeader">ОТЗЫВЫ</h2>
             <div class="feedbackSlider">
@@ -490,7 +490,7 @@
         </div>
 
     </div>
-    <div class="wrapper guidelineWrapper">
+    <div class="wrapper guidelineWrapper" id="guideline">
         <div class="block guidelineBlock">
             <h2 class="secondHeader">РЕКОМЕНДАЦИИ</h2>
 
@@ -552,31 +552,28 @@
         <div class="block footerblock">
             <a href="tel:+79781330515" class="phone">+7 (978) 133-05-15</a>
             <div class="social">
-                <div class="social__item">
-                    <a href="vk.com">
-                        <object type="image/svg+xml" data="img/icons/colored/smm_vk.svg">
-                        </object>
-                    </a>
-                </div>
-                <div class="social__item">
-                    <a href="vk.com">
-                        <object type="image/svg+xml" data="img/icons/colored/smm_viber.svg" >
-                        </object>
-                    </a>
-                </div>
-                <div class="social__item">
-                    <a href="vk.com">
-                        <object type="image/svg+xml" data="img/icons/colored/smm_whatsapp.svg" >
-                        </object>
-                    </a>
-                </div>
-                <div class="social__item">
-                    <a href="vk.com">
-                        <object type="image/svg+xml" data="img/icons/colored/smm_viber.svg" >
-                        </object>
-                    </a>
-                </div>
+                <a target="_blank" href="https://vk.com/bubble.kerch" class="social__item">
+                    <img src="img/icons/colored/smm_vk.svg" alt="">
+                </a>
+            <div class="social__item">
+                <a target="_blank" href="viber://chat?number=+79781330515">
+                    <img src="img/icons/colored/smm_viber.svg" alt="">
+
+                </a>
             </div>
+            <div class="social__item">
+
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=79781330515">
+                    <img src="img/icons/colored/smm_whatsapp.svg" alt="">
+                </a>
+            </div>
+            <div class="social__item">
+
+                <a target="_blank" target="_blank" href="https://www.instagram.com/bubble_kerch">
+                    <img src="img/icons/colored/smm_insta.svg" alt="">
+                </a>
+            </div>
+        </div>
         </div>
     </footer>
 

@@ -8,5 +8,5 @@ function setHeight() {
 }
 setHeight()
 window.addEventListener('resize', ()=>{
-    setHeight()
+    setHeight();
 })

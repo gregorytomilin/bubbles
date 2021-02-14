@@ -69,7 +69,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    @include _m(440){
+    @include _m(640){
         justify-content: space-around;  
     }
 }
