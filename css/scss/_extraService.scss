@@ -2,6 +2,19 @@
     flex-grow: 1;
     z-index: 10;
     position: relative;
+    @include _m(680) {
+        margin-top: 180px;
+        align-self: flex-end;
+
+    }
+    @include _m(680) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin-top: -80px;
+
+    }
         &__title{
             display: flex;
             width: fit-content;
@@ -17,6 +30,13 @@
             margin-bottom: 10px;
             z-index: 3;
             box-shadow: 2px 2px 5px #444444bb;
+            white-space: nowrap;
+
+            @include _m(800) {
+                font-size: 20px;
+
+            }
+
         }
         &__mickey{
             display: flex;
@@ -24,6 +44,12 @@
             width: 200px;
             margin: 0 0 -15px auto;
             z-index: 2;
+            @include _m(1000){
+                // width: 150px;
+            }
+            @include _m(800){
+                width: 150px;
+            }
             }
        
         }

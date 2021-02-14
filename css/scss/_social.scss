@@ -1,7 +1,13 @@
 .social{
     display: flex;
+    @include _m(380){
+        justify-content: flex-end;
+    }
     &__item {
         margin-right: 5px;
+        &:last-of-type{
+            margin-right: 0;
+        }
         object{
             width: 30px;
             height: 30px;

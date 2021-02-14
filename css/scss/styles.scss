@@ -35,6 +35,7 @@ $colorLight: #7e4674;
 $colorLighter: #bb1d9f;
 $colorDark: #652359;
 
+@import 'mixin';
 @import 'normalize';
 @import 'header';
 @import 'menu';
@@ -67,3 +68,4 @@ $colorDark: #652359;
   justify-self: center;
   margin-bottom: 20px;
 }
+

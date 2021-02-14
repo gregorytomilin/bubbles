@@ -6,6 +6,9 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
+    @include _m(400){
+        padding: 20px 10px;
+    }
     .phone{
         color: white;
     }

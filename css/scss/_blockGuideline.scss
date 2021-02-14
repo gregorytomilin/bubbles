@@ -18,6 +18,9 @@
     padding: 40px;
     border-radius: 20px;
     background: #ffffff;
+    @include _m(400){
+        padding: 15px;
+    }
 }
 .guideline{
     &__item{

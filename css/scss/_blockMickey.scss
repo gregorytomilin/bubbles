@@ -17,6 +17,9 @@
     max-width: 900px;
     width: 100%;
     margin: 0 auto 10px;
+    @include _m(530){
+        flex-direction: column;
+    }
 }
 .mickeyList{
     display: flex;
@@ -36,9 +39,17 @@
             margin-right: 10px;
         }
     }
+    @include _m(400){
+        z-index: 20;
+    }
 }
 .mickeyPhoto{
     z-index: 2;
+    @include _m(400){
+        & img{
+            height: 300px;
+        }
+    }
 }
 .mickey__decorShapes{
     display: flex;
@@ -54,11 +65,16 @@
         svg{
             height: 10%;
         }
+  
+    }
+    @include _m(400){
+        bottom: -10px;
     }
 }
 .mickey__baloonWrapper{
     width: 100%;
     height: 100%;
+    
     overflow: hidden;
     position: absolute;
     right: 0;

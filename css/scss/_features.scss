@@ -1,6 +1,12 @@
 .features{
     align-self: self-start;
     padding-top: 50px;
+    @include _m(680){
+        padding-top: 0px;
+
+    }
+
+
     &__item{
         display: flex;
         align-items: center;
@@ -10,6 +16,10 @@
         text-transform: uppercase;
         flex-shrink: 0;
         white-space: nowrap;
+        @include _m(800){
+            font-size: 22px;
+            white-space:normal;
+        }
         & svg{
             width: 30px;
             height: 40px;

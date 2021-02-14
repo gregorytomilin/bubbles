@@ -5,6 +5,9 @@ const rename = require('gulp-rename');
 const svgSprite = require('gulp-svg-sprite');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
+const concat = require('gulp-concat');
+const gcmq = require('gulp-group-css-media-queries');
+const cleanCSS = require('gulp-clean-css');
 
 
 
@@ -41,9 +44,23 @@ task('sass', () => {
             outputStyle: 'expanded',  // вложенный (по умoлчанию)
         }).on('error', sass.logError))
         .pipe(sourcemaps.init())
+        .pipe(gcmq())
+        .pipe(cleanCSS())
         .pipe(dest('./css'));      // выгружаем результат
 });
 
+task('js', () => {
+    return src('js/modules/*.js') // берём все js-файлы
+        .pipe(concat('main.js'))
+        .pipe(dest('./js'));      // выгружаем результат
+});
+
+
+
 task('watch', ()=>{
-    return watch(['css/scss/*.scss'], series('sass'));
+    watch(['css/scss/*.scss'], series('sass'));
+    watch(['js/modules/*.js'], series('js'));
 })
+// task('watch', ()=>{
+//     return 
+// })

@@ -1,0 +1,5 @@
+@mixin _m($dem){
+        @media (max-width: $dem+px){
+        @content;
+        }
+    }

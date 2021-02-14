@@ -1,6 +1,12 @@
 .contacts{
     display: flex;
     align-items: center;
+    @include _m(530){
+        flex-direction: column;
+    }
+    @include _m(380){
+        align-items: flex-end;
+    }
 }
 .phone{
     font-size: 25px;
@@ -8,4 +14,7 @@
     color: $color;
     margin-right: 10px;
     text-decoration: none;
+    @include _m(380){
+        margin-right: 0;
+    }
 }

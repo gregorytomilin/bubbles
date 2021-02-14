@@ -6,12 +6,18 @@
     background-size: cover;
     position: relative;
     overflow: hidden;
+    @include _m(680){
+      height: auto;
+    }
   }
   .block-main{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-grow: 1;
+    @include _m(680){
+      flex-direction: column;
+    }
   
   }
   

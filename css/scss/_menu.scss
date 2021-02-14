@@ -1,6 +1,24 @@
 .menu{
     display: inline-flex;
     justify-self: center;
+    transform: translate(0, 0);
+    @include _m(680){
+        transform: translate(-100%, 0);
+        transition: transform ease .5s;
+
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        background: $color;
+        z-index: 100;
+        
+    }
     &__item{
         padding: 8px 20px;
         font-size: 25px;
@@ -9,6 +27,15 @@
         text-decoration: none;
         border-right: 2px solid $colorLighter;
         transition: all ease .2s;
+        @include _m(800){
+            font-size: 20px;
+            padding: 8px 15px;
+        }
+        @include _m(680){
+            border: none;
+            font-size: 30px;
+            color: white;
+        }
         &:last-child{
         border-right: none;
         }
@@ -19,3 +46,38 @@
         }
     }
 }
+
+.closeMenu{
+    display: none;
+    @include _m(680){
+        display: flex;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        & svg{
+            width: 50px;
+            height: 50px;   
+            fill: white;
+        }
+    }
+}
+
+.hamburger{
+    display: none;
+    @include _m(680){
+        display: flex;
+    position: fixed;
+    z-index: 99;
+  
+    top: 30px;
+    left: 10px;
+    background-color: #ffffff94;
+    border-radius: 10px;
+    & svg{
+      width: 50px;
+      height: 50px;
+     fill: $color;
+  
+    }
+}
+  }
