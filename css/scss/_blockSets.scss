@@ -66,6 +66,7 @@
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    text-decoration: none;
     @include _m(440){
         width: 43%;
     }

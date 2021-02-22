@@ -1,0 +1,217 @@
+﻿#jbCallme_overlay{
+    background:#000;
+    opacity:0.8;
+    filter:alpha(opacity=80);
+    position:fixed;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index:100;
+    display:none;
+}
+
+.jbCallme{  
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: pink;
+    position:fixed;
+    text-align: center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    width: 100%;
+    z-index:110;
+    color: #ffffff;
+    display:none;
+    height:auto;
+}
+@media(max-width:400px){
+    .jbCallme{
+        width: calc(100%    - 20px);
+    }
+}
+
+.jbCallme .jb_title{
+    display: none;
+    text-transform:uppercase;
+    color:#fff;
+    font-size:14px;
+    padding:10px;
+    background:#293c4d;
+}
+.jbCallme .jb_title:first-letter{
+    font-size:18px;
+}
+.jbCallme textarea{
+    padding: 3px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    width: calc(100% - 20px);
+    height:100px;
+    border:none;
+    border-radius: 6px;
+    resize: none;
+}
+.jbCallme form{
+    margin: 25px;
+}
+.jbCallme .jb_input{
+    margin: 20px auto;
+    color: #fff;
+
+}
+.jbCallme  label   {
+
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+    margin-top: 12px;
+}
+.jbCallme input[type=text],.jbCallme input[type=email]{
+
+    border: none;
+
+    padding: 7px;
+    background-color: #fff;
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    border-radius: 6px;
+    /*margin: 0 auto;*/
+  
+}
+.jbCallme select{
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    border: 1px solid #CCCCCC;
+    padding: 7px;
+    background-color: #fff;
+    width:100%;
+    display:block;
+  
+}
+.jbCallme select:focus,.jbCallme input[type=text]:focus,.jbCallme input[type=email]:focus, .jbCallme textarea:focus{
+    background-color: #f9fbff;
+    border: none;
+    border-radius: 6px;
+}
+.jbCallme .jb_close{    
+    position:absolute;
+    display:block;
+    top:10px;
+    right:10px;
+    width:44px;
+    height:44px;
+    cursor:pointer;
+    text-indent:-500px;
+    overflow:hidden;
+}
+.jbCallme .jb_close:after{
+    display:block;
+    content:'\2716';
+    position:absolute;
+    line-height:24px;
+    font-size:26px;
+    text-indent:0;
+    top:0;
+    right:0;
+    color:#fff;
+}
+.jbCallme input[type=submit]{
+
+    margin:0 auto;
+    border: 0 none;
+    display:inline-block;
+    background-color: var(--color-white);
+    color: var(--color-grey);
+    text-indent:0;
+    padding: 12px 31px;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    font-size: 20px;
+    line-height:14px;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor:pointer;
+    transition: all .2s;
+}
+.jbCallme input[type=submit]:hover {
+    background-color: var(--color-grey);
+    color: var(--color-white);
+}
+.jbCallme .jb_dev{
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    color:#c2c3c4;
+    text-decoration:none;
+	display:none!important;
+}
+.jbCallme .jb_success{
+    margin:30px;
+    color:var(--color-white);
+    font-size:20px;
+}
+.jbCallme .jb_fail{
+    margin:30px;
+    color:var(--color-white);
+    font-size:20px;
+}
+.jb_progress{
+    display: inline-block;
+    height: 76px;
+    position: relative;
+    vertical-align: top;
+    width: 100%;    
+}
+.jb_progress:after {
+	border-width: 0 3px 0 0;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, .5);
+	border-radius: 50%;
+	display: block;
+	height: 50px;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+	position: absolute;
+	top: 50%;
+	width: 50px;
+
+	content: "";
+
+	animation: spin 1s infinite linear;
+	-webkit-animation: spin 1s infinite linear;
+}
+@keyframes spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+	from { -webkit-transform: rotate(0deg); }
+	to { -webkit-transform: rotate(360deg); }
+}
+
+@media (max-width:1200px) {
+    .jbCallme{
+
+
+
+        z-index:110;
+
+        display:none;
+        height:auto;
+    }
+}
+
+
+
+
