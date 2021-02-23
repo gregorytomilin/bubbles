@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
         let feedbackItems = document.querySelectorAll('.feedbackItem');
 
         let totalSliderWidth = feedbackItems.length * feedbackSliderWidth;
+
         feedbackSliderRight.addEventListener('click',()=>{
             slider.right()
         })
         feedbackSliderLeft.addEventListener('click',()=>{
-            console.log('left');
             slider.left()
         })
 
@@ -52,10 +52,13 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
     }
     slider();
-    slider.resize() 
+    slider.resize(); 
 
     window.addEventListener('resize',()=>{
         slider.resize();
-    })
+    });
+
+    
+
     
 });

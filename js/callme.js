@@ -1,10 +1,3 @@
-;/*
-jbCallMe v0.2 2014
-by Jet Bit - http://JetBit.ru
-
-For more information, visit:
-http://jetbit.ru/market/jbcallme
-*/
 (function ($, window, document, undefined) {
     var pluginName = 'jbcallme',
         defaults = {
